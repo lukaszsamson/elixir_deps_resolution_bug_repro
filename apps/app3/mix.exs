@@ -25,28 +25,19 @@ defmodule App3.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:phoenix, "~> 1.5.0"},
+      {:phoenix, "~> 1.5.12"},
       {:phoenix_pubsub, "~> 2.0"},
-      {:phoenix_ecto, "~> 4.0"},
-      {:ecto_sql, "~> 3.0"},
-      {:phoenix_html, "~> 2.6"},
-      {:phoenix_live_reload, "~> 1.2.0", only: [:dev, :front]},
-      {:decimal, "~> 1.5"},
-      {:gettext, "~> 0.11"},
+      {:phoenix_ecto, "~> 4.4"},
+      {:ecto_sql, "~> 3.7"},
+      {:ecto, "~> 3.7.1"},
+      {:phoenix_html, "~> 3.0"},
+      {:phoenix_live_reload, "~> 1.3", only: :dev},
+      {:decimal, "~> 1.9"},
+      {:gettext, "~> 0.18"},
       {:app0, in_umbrella: true},
-      {:plug, "~> 1.7"},
       {:plug_cowboy, "~> 2.5"},
-      {:absinthe, "~> 1.6.0"},
-      {:absinthe_plug, "~> 1.5.0"},
-      {:ex_rated, "~> 2.0"},
-      {:corsica, "~> 1.0"},
-      {:appsignal_phoenix, "~> 2.0"},
-      {:mock, "~> 0.3", only: :test},
-      {:nimble_csv, "~> 1.1"},
-      {:bamboo, "~> 1.2"}
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
-      # {:sibling_app_in_umbrella, in_umbrella: true}
+      {:plug, "~> 1.12"},
+      {:appsignal_phoenix, "~> 2.0"}
     ]
   end
 end
